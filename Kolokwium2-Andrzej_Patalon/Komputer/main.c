@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
     czyLaptop = czyLaptopInt == 1;
 
     bool zleDane = false;
-
     if (!czyPrawidlowaCena(cena))
     {
         printf("Podana cena jest nieprawidlowa!\n");
