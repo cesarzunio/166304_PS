@@ -6,8 +6,8 @@ char* strcpyEven(char *t, const char *s);
 
 int main(void)
 {
-    char* kopia = calloc(10, sizeof(char));
-    char napis[] = "abcdefghij";
+    char* kopia = calloc(50, sizeof(char));
+    char napis[] = "tekst do skopiowania";
 
     strcpyEven(kopia, napis);
 
@@ -27,5 +27,5 @@ char* strcpyEven(char *t, const char *s)
 
     *t = '\0';
 
-    return t;
+    return temp;
 }
