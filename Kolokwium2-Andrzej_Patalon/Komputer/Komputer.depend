@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1653572515 source:c:\users\local\desktop\166304_ps\kolokwium2-andrzej_patalon\komputer\komputer.c
+	<stdio.h>
+	<string.h>
+	"komputer.h"
+
+1653572981 c:\users\local\desktop\166304_ps\kolokwium2-andrzej_patalon\komputer\komputer.h
+	<stdbool.h>
+
+1653573149 source:c:\users\local\desktop\166304_ps\kolokwium2-andrzej_patalon\komputer\main.c
+	<stdio.h>
+	"komputer.h"
+	<string.h>
+
