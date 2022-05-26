@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "komputer.h"
 #include <string.h>
-#include <stdlib.h>
 
 bool czyPrawidlowaCena (double cena);
 bool czyPrawidlowyWiek (int ileMaLat);
@@ -79,15 +78,29 @@ int main(int argc, char *argv[])
 
     // 11) Wypisz informacje o obiektach komp1, komp2, komp3
 
+    show(&komp1);
+    show(&komp2);
+    show(&komp3);
+
     // 12) stwórz tablicê o nazwie tab trzech komputerów
+
+    Komputer tab[3];
 
     // 13) W pêtli for do przechodzenia tablicy zamiast indeksów nale¿y u¿yæ wskaŸników, a ka¿dy operator indeksowania nale¿y zastapiæ operatorem dereferencji!!
     // PrzejdŸ tablicê i wype³nij j¹ komputerami uzywaj¹c odpowiedniej funkcji.
 
+    for (Komputer *p = tab; p < tab + 3; ++p)
+    {
+        *p = makeKomputer(nazwa, cena, ileMaLat, czyLaptop);
+    }
 
     // 14) W pêtli for do przechodzenia tablicy zamiast indeksów nale¿y u¿yæ wskaŸników, a ka¿dy operator indeksowania nale¿y zastapiæ operatorem dereferencji!!
     // Wypisz informacje o wszystkich obiektach typu Komputer znajduj¹cych sie w tablicy tab
 
+    for (Komputer *p = tab; p < tab + 3; ++p)
+    {
+        show(p);
+    }
 
     return 0;
 }
